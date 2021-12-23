@@ -1,0 +1,40 @@
+// .filtre {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 34px;
+// }
+
+// .filtre__item {
+//   &:not(:last-child) {
+//     margin-right: 9px;
+//   }
+// }
+
+// .filtre__button {
+//   padding: 8px 22px;
+
+//   color: $title-text-color;
+//   background-color: $gray-background-color;
+//   font-family: inherit;
+
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.62;
+//   border-radius: 4px;
+//   border: none;
+
+//   cursor: pointer;
+
+//   transition: background-color $transition-duration $transition-timing-function,
+//     color $transition-duration $transition-timing-function,
+//     box-shadow $transition-duration $transition-timing-function;
+
+//   &:hover,
+//   &:focus {
+//     color: $white-color;
+//     background-color: $accent-color;
+
+//     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+//       0px 2px 2px rgba(0, 0, 0, 0.12);
+//   }
+// }

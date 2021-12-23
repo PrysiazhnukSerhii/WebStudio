@@ -1,0 +1,22 @@
+.page-header {
+  position: relative;
+
+  height: 60px;
+  border-bottom: 1px solid #ececec;
+  padding: 10px 0;
+
+  // max-width: 480px;
+  // margin: 0 auto; это поставить когда открыта модалка меню и еще опасити 0 на хедер
+}
+
+// .page-header__container {
+//   display: flex;
+//   align-items: center;
+// }
+
+//------------------- main-nav------------
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

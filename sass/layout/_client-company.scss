@@ -1,0 +1,48 @@
+.client-company {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin: -15px;
+}
+
+.client-company__item {
+  margin: 15px;
+
+  @media screen and (max-width: 767px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    flex-basis: calc((100% - 6 * 15px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 12 * 15px) / 6);
+  }
+}
+
+.client-company__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 92px;
+  border: 1px solid $social-image-color;
+  border-radius: 4px;
+
+  fill: $social-image-color;
+
+  transition: border $transition-duration $transition-timing-function,
+    fill $transition-duration $transition-timing-function;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.client-company__icon {
+  width: 106px;
+  height: 60px;
+}

@@ -1,0 +1,35 @@
+.address {
+  font-style: normal;
+}
+
+.address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.address__link {
+  color: $translucent-color;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color $transition-duration $transition-timing-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.address__plase {
+  color: $white-color;
+  font-size: 14px;
+  line-height: 1.71;
+
+  transition: color $transition-duration $transition-timing-function;
+
+  &:focus,
+  &:hover {
+    color: $accent-color;
+  }
+}
