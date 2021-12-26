@@ -1,70 +1,58 @@
 .contacts {
+  margin-left: auto;
+
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-flow: wrap;
+  }
+}
+
+.contacts__item {
+  &:first-child {
+    @media screen and (max-width: 1199.98px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  & + .contacts__item {
+    @media screen and (min-width: 1200px) {
+      margin-left: 30px;
+    }
+  }
+}
+
+.contacts__link {
   display: flex;
-  flex-flow: wrap;
 
-  padding-bottom: 64px;
-}
+  color: $primeri-text-color;
+  fill: $primeri-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-.contacts__item--order {
-  order: 1;
-  margin-bottom: 32px;
-}
+  transition: color $transition-duration $transition-timing-function,
+    fill $transition-duration $transition-timing-function;
 
-.contacts__item--order-secondari {
-  order: 2;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .contacts__icon {
-  display: none;
+  width: 16px;
+  height: 16px;
+
+  @media screen and (max-width: 1199.98px) {
+    margin-right: 8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }
-
-.contacts__link--email-size {
-  color: $primeri-text-color;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-
-.contacts__link--phone-size {
-  padding-bottom: 32px;
-
-  color: $accent-color;
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-}
-
-// .contacts__item + .contacts__item {
-//   margin-left: 50px;
-// }
-
-// .contacts__link {
-//   display: flex;
-
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-
-//   color: $primeri-text-color;
-//   fill: $primeri-text-color;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-
-//   transition: color $transition-duration $transition-timing-function,
-//     fill $transition-duration $transition-timing-function;
-
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//     fill: $accent-color;
-//   }
-// }
-
-// .contacts__icon {
-//   width: 16px;
-//   height: 16px;
-//   margin-right: 10px;
-// }

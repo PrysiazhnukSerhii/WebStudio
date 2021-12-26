@@ -8,7 +8,7 @@
 }
 
 .feature__item {
-  @media screen and (max-width: 767) {
+  @media screen and (max-width: 767.98px) {
     max-width: 450px;
 
     &:not(:last-child) {
@@ -20,7 +20,7 @@
     margin: 15px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
 
@@ -54,7 +54,7 @@
   line-height: 1.14;
   text-transform: uppercase;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     text-align: center;
   }
 }

@@ -14,61 +14,90 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body > 
-<header class="page-header">  
+<header class="page-header">
     <div class=" container  page-header__container">
         <nav class="main-nav">
-            <a href="./index.html" class="logo"> <span class="logo__start">Web</span><span class="logo__and">Studio</span>
+            <a href="./index.html" class="logo"> <span class="logo__start">Web</span><span
+                    class="logo__and">Studio</span>
             </a>
-
-            <div class="menu__container">
-                <ul class="site-nav ">
-                <li class="site-nav__item"> <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a> </li>
+            <ul class="site-nav ">
+                <li class="site-nav__item"> <a href="./index.html"
+                        class="site-nav__link site-nav__link--current">Студия</a> </li>
                 <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link">Портфолио</a> </li>
                 <li class="site-nav__item"> <a href="" class="site-nav__link">Контакты</a> </li>
             </ul>
-            <div>
-                <ul class="contacts ">
-                    <li class="contacts__item contacts__item--order-secondari">
-                        <a href="mailto:info@devstudio.com" class="contacts__link contacts__link--email-size"> <svg
-                                class="contacts__icon">
-                                <use href="./image/icons.svg#envelope"></use>
-                            </svg>info@devstudio.com</a>
-                    </li>
-                
-                
-                    <li class="contacts__item contacts__item--order"> <a href="telto:+38096111111"
-                            class="contacts__link contacts__link--phone-size"> <svg class="contacts__icon">
-                                <use href="./image/icons.svg#smartphone"></use>
-                            </svg>+38 096 111 11 11</a></li>
-                </ul>
-                <ul class="menu__social-networks">
-                    <li class="menu__item">
-                        <a class="menu_link" href="https://www.instagram.com/" target="_blank" rel="noopener no-referrer">instagram</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu_link" href="https://twitter.com/" target="_blank" rel="noopener no-referrer">twitter</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu_link" href="https://www.facebook.com/" target="_blank" rel="noopener no-referrer">facebook</a>
-                    </li>
-                    <li class="menu__item">
-                        <a class="menu_link" href="https://www.linkedin.com/" target="_blank" rel="noopener no-referrer">linkedin</a>
-                    </li>
-                </ul>
-            </div>
-            <button class="menu__button js-open-menu" type="button" aria-expanded="false" aria-controls="menu-button">
-                <svg width="18px" height="18px" aria-label="переключатель мобильного меню">
-                    <use class="menu__icon--menu" href="./symbol-defs.svg#menu"></use>
-                    <use class="menu__icon--crosse" href="./symbol-defs.svg#close"></use>
-                </svg></button>
-            </div>
-              
         </nav>
-       
+        <ul class="contacts ">
+            <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link"> <svg class="contacts__icon">
+                        <use href="./image/icons.svg#envelope"></use>
+                    </svg>info@devstudio.com</a>
+            </li>
+
+
+            <li class="contacts__item"> <a href="telto:+38096111111" class="contacts__link "> <svg
+                        class="contacts__icon">
+                        <use href="./image/icons.svg#smartphone"></use>
+                    </svg>+38 096 111 11 11</a></li>
+        </ul>
+        <button class="mob-menu__open-btn">
+            
+                <svg width="18px" height="18px" aria-label="переключатель мобильного меню">
+                    <use  href="./symbol-defs.svg#menu"></use>
+                    
+                </svg></button>
+        </button>
+
+        <div class=" mob-menu  is-hidden">
+            <div class="container mob-menu__container">
+                <button class="mob-menu__close-btn">
+                
+                    <svg width="18px" height="18px" aria-label="переключатель мобильного меню">
+                        <use href="./symbol-defs.svg#close"></use>
+                
+                    </svg></button>
+                </button>
+                
+                <ul class="mob-menu__site-nav ">
+                    <li class="site-nav__item"> <a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a> </li>
+                    <li class="site-nav__item"> <a href="./portfolio.html" class="site-nav__link">Портфолио</a> </li>
+                    <li class="site-nav__item"> <a href="" class="site-nav__link">Контакты</a> </li>
+                </ul>
+                
+                <div>
+                    <ul class="mob-menu__contacts ">
+                        <li class="mob-menu__contacts--phone-margin"> <a href="telto:+38096111111"
+                                class="mob-menu__contacts--phone-size">+38 096 111 11 11</a></li>
+                        <li class="mob-menu__contacts--email-margin">
+                            <a href="mailto:info@devstudio.com" class="mob-menu__contacts--email-size"> info@devstudio.com</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__social-networks">
+                        <li class="menu__item">
+                            <a class="menu_link" href="https://www.instagram.com/" target="_blank"
+                                rel="noopener no-referrer">instagram</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu_link" href="https://twitter.com/" target="_blank" rel="noopener no-referrer">twitter</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu_link" href="https://www.facebook.com/" target="_blank"
+                                rel="noopener no-referrer">facebook</a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu_link" href="https://www.linkedin.com/" target="_blank"
+                                rel="noopener no-referrer">linkedin</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+ 
+          
+        </div>
 
     </div>
 
-  
+
 </header>
 
 <main>
@@ -148,9 +177,21 @@
             <h2 class="section__title"> Наша команда </h2>
             <ul class="team">
                 <li class="team__item">
-                    <img class="team__icon"
-                    srcset="./image/our_team/phone/x1/img-1-x1-phone.jpg 1x, ./image/our_team/phone/x2/img-1-x2-phone.jpg 2x"
-                     src="./image/our_team/phone/x1/img-1-x1-phone.jpg" alt="Игорь Демьяненко фото" width="270" height="260">
+                    <picture>
+                        <source srcset="./image/our_team/comp/1x/img-comp-1-1x.jpg 1x, ./image/our_team/comp/2x/img-comp-1-2x.jpg 2x"
+                            media="(min-width:1200px)" />
+
+                        <source srcset="./image/our_team/tablet/1x/img-tablet-1-1x.jpg 1x, ./image/our_team/tablet/2x/img-tablet-1-2x.jpg 2x"
+                            media="(min-width:767px)"/>
+
+                        <source
+                        srcset="./image/our_team/phone/x1/img-phone-1-1x.jpg 1x, ./image/our_team/phone/x2/img-phone-1-2x.jpg 2x"
+                        media="(max-width:767px)"
+                        />
+
+                        <img src="./image/our_team/phone/x1/img-phone-1-1x.jpg" alt="Игорь Демьяненко фото">
+                    </picture>
+                
                     <div class="team__container">
                         <h3 class="team__title">Игорь Демьяненко</h3>
                         <p class="team__text">Product Designer</p>
@@ -181,9 +222,19 @@
                    
                 </li>
                 <li class="team__item">
-                    <img class="team__icon"
-                    srcset="./image/our_team/phone/x1/img-2-x1-phone.jpg 1x, ./image/our_team/phone/x2/img-2-x2-phone.jpg 2x"
-                     src="./image/our_team/img(1).jpg" alt="Ольга Репина фото" width="270" height="260" >
+                    <picture>
+                        <source srcset="./image/our_team/comp/1x/img-comp-2-1x.jpg 1x, ./image/our_team/comp/2x/img-comp-2-2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                    
+                        <source
+                            srcset="./image/our_team/tablet/1x/img-tablet-2-1x.jpg 1x, ./image/our_team/tablet/2x/img-tablet-2-2x.jpg 2x"
+                            media="(min-width:767px)" />
+                    
+                        <source srcset="./image/our_team/phone/x1/img-phone-2-1x.jpg 1x, ./image/our_team/phone/x2/img-phone-2-2x.jpg 2x"
+                            media="(max-width:767px)" />
+                    
+                        <img src="./image/our_team/phone/x1/img-phone-2-1x.jpg" alt="Ольга Репина фото">
+                    </picture>
                     <div class="team__container"> 
                         <h3 class="team__title">Ольга Репина</h3>
                         <p class="team__text">Frontend Developer</p>
@@ -221,9 +272,20 @@
                     
                 </li>
                 <li class="team__item">
-                    <img class="team__icon"
-                    srcset="./image/our_team/phone/x1/img-3-x1-phone.jpg 1x, ./image/our_team/phone/x2/img-3-x2-phone.jpg 2x"
-                     src="./image/our_team/img(2).jpg" alt="Николай Тарасов фото" width="270" height="260">
+                         <picture>
+                        <source srcset="./image/our_team/comp/1x/img-comp-3-1x.jpg 1x, ./image/our_team/comp/2x/img-comp-3-2x.jpg 2x"
+                            media="(min-width:1200px)" />
+
+                        <source srcset="./image/our_team/tablet/1x/img-tablet-3-1x.jpg 1x, ./image/our_team/tablet/2x/img-tablet-3-2x.jpg 2x"
+                            media="(min-width:767px)"/>
+
+                        <source
+                        srcset="./image/our_team/phone/x1/img-phone-3-1x.jpg 1x, ./image/our_team/phone/x2/img-phone-3-2x.jpg 2x"
+                        media="(max-width:767px)"
+                        />
+
+                        <img src="./image/our_team/phone/x1/img-phone-3-1x.jpg" alt="Николай Тарасов фото">
+                    </picture>
                     <div class="team__container">
                         <h3 class="team__title">Николай Тарасов</h3>
                         <p class="team__text">Marketing</p>
@@ -260,9 +322,19 @@
                     
                 </li>
                 <li class="team__item">
-                    <img class="team__icon"
-                    srcset="./image/our_team/phone/x1/img-4-x1-phone.jpg 1x, ./image/our_team/phone/x2/img-4-x2-phone.jpg 2x"
-                     src="./image/our_team/img(3).jpg" alt="Михаил Ермаков фото" width="270" height="260">
+                    <picture>
+                        <source srcset="./image/our_team/comp/1x/img-comp-4-1x.jpg 1x, ./image/our_team/comp/2x/img-comp-4-2x.jpg 2x"
+                            media="(min-width:1200px)" />
+                    
+                        <source
+                            srcset="./image/our_team/tablet/1x/img-tablet-4-1x.jpg 1x, ./image/our_team/tablet/2x/img-tablet-4-2x.jpg 2x"
+                            media="(min-width:767px)" />
+                    
+                        <source srcset="./image/our_team/phone/x1/img-phone-4-1x.jpg 1x, ./image/our_team/phone/x2/img-phone-4-2x.jpg 2x"
+                            media="(max-width:767px)" />
+                    
+                        <img src="./image/our_team/phone/x1/img-phone-4-1x.jpg" alt="Михаил Ермаков фото">
+                    </picture>
                     <div class="team__container">
                         <h3 class="team__title">Михаил Ермаков</h3>
                         <p class="team__text">UI Designer</p>
@@ -440,7 +512,7 @@
 
 <!------------------ modal----------------->
 
-<!-- <div class="backdrop is-hidden" data-modal>
+<div class="backdrop is-hidden" data-modal>
     <div class="modal" >
         <p class="modal__title">Оставьте свои данные, мы вам перезвоним</p>
         <form>
@@ -489,10 +561,11 @@
             </svg> 
         </button>
     </div>
-</div> -->
+</div>
 
 
 <script src="./js/modal.js"></script>
+<script src="./js/mob-menu.js"></script>
 
 </body>
 </html>

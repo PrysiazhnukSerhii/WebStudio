@@ -1,22 +1,33 @@
 .page-header {
-  position: relative;
-
-  height: 60px;
   border-bottom: 1px solid #ececec;
-  padding: 10px 0;
 
-  // max-width: 480px;
-  // margin: 0 auto; это поставить когда открыта модалка меню и еще опасити 0 на хедер
+  @media screen and (max-width: 767.98px) {
+    position: relative;
+
+    height: 60px;
+  }
 }
 
-// .page-header__container {
-//   display: flex;
-//   align-items: center;
-// }
-
-//------------------- main-nav------------
-.main-nav {
+.page-header__container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+
+  padding-left: 15px;
+  padding-right: 15px;
+
+  @media screen and (max-width: 767.98px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+
+
+// //------------------- main-nav------------
+.main-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    
+  }
 }

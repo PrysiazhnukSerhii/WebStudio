@@ -14,7 +14,7 @@
 
   background-color: $white-color;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     margin-bottom: 30px;
     max-width: 450px;
 
@@ -27,7 +27,7 @@
     margin: 15px;
   }
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
+  @media screen and (min-width: 768px) and (max-width: 1199.98px) {
     flex-basis: calc((100% - 4 * 15px) / 2);
   }
 
@@ -39,11 +39,11 @@
 .team__icon {
   width: 100%;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 767.98px) {
     height: 460px;
   }
 
-  @media screen and(min-width: 768px) and (max-width: 1199px) {
+  @media screen and(min-width: 768px) and (max-width: 1199.98px) {
     height: 374px;
   }
 }
